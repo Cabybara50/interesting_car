@@ -1,5 +1,6 @@
 @import url("constant.css");
 @import url("navbar.css");
+@import url("car_container.css");{}
 
 h1,
 h2,
@@ -8,17 +9,31 @@ h4 {
     font-family: var(--font-stack);
 }
 
-.about-us {
+.about-us, .summary-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: var(--secondary-color);
-    min-height: 400px;
     padding: 5%;
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.WfYCtSbgu73EPXZEqVp30wHaEK%26pid%3DApi&f=1&ipt=99186fa01916c1abf80c8a15a31c2e5ad2bf94db9845670c9a59d1a466091445&ipo=images");
     background-repeat: no-repeat;
     background-size: 100% 400px;
     width: 100%;
+    align-items: center;
+}
+
+.about-us {
+    min-height: 400px;
+    justify-content: center;
+}
+
+.summary-container {
+    flex-direction: column;
+    min-height: 200px;
+    color: white;
+}
+
+.summary-container h3 {
+    padding: 10px;
+    text-align: center;
+    color: white;
 }
 
 .about-us h1 {
@@ -35,4 +50,17 @@ h4 {
     75% {
         font-weight: bold;
     }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+footer * {
+    text-align: center;
 }
