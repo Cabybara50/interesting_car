@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter");
+
+:root {
+    --primary-color: #17153b;
+    --secondary-color: #2e236c;
+    --tertiary-color: #433d8b;
+    --accent-color: #c8acd6;
+    --text-color: black;
+    --font-stack: "Inter", Helvetica, Arial;
+}
+
+* {
+    margin: 0px;
+    min-width: 0px;
+    min-height: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text-color);
+    font-family: var(--font-stack);
+}
+
+p {
+    padding: 2px;
+    color: black;
+}
